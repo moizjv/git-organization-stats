@@ -1,0 +1,49 @@
+{
+  "name": "git-organization-stats",
+  "description": "Description goes here.",
+  "keywords": [
+    "appium"
+  ],
+  "version": "0.0.0",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moizjv/git-organization-stats"
+  },
+  "bugs": {
+    "url": "https://github.com/moizjv/git-organization-stats/issues"
+  },
+  "engines": [
+    "node"
+  ],
+  "main": "./build/index.js",
+  "bin": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "asyncbox": "^2.3.1",
+    "babel-runtime": "=5.5.5",
+    "bluebird": "^2.9.32",
+    "koa": "^2.0.0-alpha.3",
+    "koa-body": "^1.4.0",
+    "koa-bodyparser": "^3.0.0",
+    "koa-router": "^7.0.1",
+    "source-map-support": "^0.3.1"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp once",
+    "watch": "gulp",
+    "start": "npm run test && node ."
+  },
+  "devDependencies": {
+    "appium-gulp-plugins": "^1.2.12",
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.1.0",
+    "gulp": "^3.8.11",
+    "mochawait": "^2.0.0",
+    "request-promise": "^2.0.0",
+    "yargs": "^3.10.0"
+  }
+}
