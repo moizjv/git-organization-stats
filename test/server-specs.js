@@ -23,6 +23,10 @@ describe('git-organization-stats endpoints', () => {
     let body = await request({url: baseUrl + '/appium/projects',});
     body.should.have.length.above(0);
   });
+  it('should get all users from repo',async () => {
+    let body = await request({url: baseUrl + '/appium/appium/users',});
+    body.should.have.length.above(0);
+  });
 
   after(async () => {
     koaServer.close();
